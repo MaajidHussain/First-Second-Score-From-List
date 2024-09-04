@@ -1,13 +1,13 @@
 
 def first_second(my_list):
-    first_score=0
-    second_score=0
+    first_score=float('-inf')
+    second_score=float('-inf')
     
     for score in my_list:
         if score>first_score:
             second_score=first_score
             first_score=score
-        elif score>second_score and num!=first_score:
+        elif score>second_score and score!=first_score:
             second_score=score
     
     return first_score,second_score
